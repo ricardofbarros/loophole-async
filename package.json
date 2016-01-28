@@ -1,0 +1,30 @@
+{
+  "name": "loophole-async",
+  "version": "1.0.1",
+  "description": "A hack to enable use of libraries that depend on a basic form of eval in Atom, but asynchronously",
+  "main": "loophole-async.js",
+  "scripts": {
+    "lint": "node_modules/.bin/standard",
+    "test": "node_modules/.bin/mocha"
+  },
+  "author": {
+    "name": "Ricardo Barros",
+    "email": "ricardofbarros@hotmail.com"
+  },
+  "repository": "https://github.com/ricardofbarros/loophole-async.git",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.4",
+    "pre-commit": "^1.1.2",
+    "standard": "^5.4.1"
+  },
+  "dependencies": {
+    "loophole": "^1.1.0",
+    "trycatch": "^1.5.21"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
+}
